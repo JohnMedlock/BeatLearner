@@ -1,5 +1,7 @@
+import pygame
 from midiutil import MIDIFile
 import random
+import io
 
 class BeatMaker:
     def __init__(self):
@@ -40,12 +42,27 @@ class BeatMaker:
         print(f"File saved as {filename}")
 
     def play(self):
-        # Implement code to play MIDI file if required.
-        # You might need additional libraries or tools to play MIDI directly from Python.
-        pass
+        # Convert the MIDI data to a bytes-like object
+        midi_stream = io.BytesIO()
+        self.midi.writeFile(midi_stream)
+        midi_stream.seek(0)
+        
+        # Initialize pygame mixer and play the MIDI
+        pygame.mixer.init()
+        pygame.mixer.music.load(midi_stream)
+        pygame.mixer.music.play()
 
-
+        # Keep the program running while the music is playing
+        while pygame.mixer.music.get_busy():
+            pygame.time.Clock().tick(10)
+            
 if __name__ == "__main__":
-    beat = BeatMaker()
-    beat.generate()
-    beat.save()
+    while True:  # Infinite loop to generate and play music non-stop
+        beat = BeatMaker()
+        
+        # Optionally, you can add code here to randomize tempo and genre for variety
+        # beat.set_tempo(random.choice(range(80, 141)))  # Random tempo between 80 to 140
+        # beat.select_genre(random.choice(["Jazz", "EDM"]))  # Random genre
+        
+        beat.generate()
+        beat.play()

@@ -1,20 +1,22 @@
-# BeatLearner: Machine Learning Music Improv AI 🎵
+Considering the basic prototype provided, here's an updated README:
+
+---
+
+# BeatLearner: Basic Machine Learning Music Improv AI 🎵
 
 ---
 
 ## Introduction
 
-**BeatLearner** is a cutting-edge machine learning application designed to revolutionize the way we understand and generate music. At its core, it aims to harness the power of AI to craft harmonious melodies, intricate beats, and a unique soundscape, blending the realms of technology and artistry.
+**BeatLearner** is a simple prototype designed to introduce the concept of generating music programmatically. It's not fully AI-driven yet, but serves as a starting point for those looking to blend technology with music.
 
 ---
 
 ## Features
 
-1. **Adaptive Learning** - The more you use it, the more BeatLearner understands your style.
-2. **Dynamic Genre Selection** - From Jazz to Electronic Dance Music, explore AI-generated beats across genres.
-3. **Collaboration Mode** - Combine the strengths of multiple instruments and produce tracks collaboratively.
-4. **Real-time Feedback Loop** - Instantly hear what BeatLearner creates and mold it to your taste.
-5. **Export and Share** - Easily save and share your AI-mastered tracks with the world.
+1. **Genre Selection** - Currently supports Jazz and EDM genres with predefined scales.
+2. **Customizable Tempo** - Adjust the beats per minute to your liking.
+3. **MIDI Output** - Save your generated beats as MIDI files for external playback.
 
 ---
 
@@ -22,8 +24,10 @@
 
 1. **Installation**:
 
+   You need to install MIDIUtil for BeatLearner to work:
+
    ```bash
-   pip install beatlearner
+   pip install MIDIUtil
    ```
 
 2. **Usage**:
@@ -34,29 +38,27 @@
    # Initialize BeatMaker
    beat = BeatMaker()
    
-   # Generate a random beat
-   my_beat = beat.generate()
+   # Generate a beat based on default settings
+   beat.generate()
    
-   # Play the beat
-   my_beat.play()
+   # Save the beat as a MIDI file
+   beat.save("output.mid")
    ```
 
 ---
 
 ## Customization
 
-You can tweak several parameters to get the desired output:
+You can adjust several parameters:
 
-- **Genre**: Specify the type of music you're interested in.
-- **BPM (Beats Per Minute)**: Set your preferred tempo.
-- **Instruments**: Select the instruments you want in your track.
-- **Duration**: Set the length of the music piece.
+- **Genre**: Choose between Jazz and EDM.
+- **BPM (Beats Per Minute)**: Adjust your desired tempo using the `set_tempo` method.
 
 ---
 
 ## Contribute
 
-BeatLearner thrives on community contributions. We welcome all music enthusiasts, developers, and machine learning experts to join hands in making BeatLearner the go-to AI music improvisation tool.
+Though BeatLearner is a basic prototype, we welcome all music enthusiasts, developers, and machine learning experts to join in refining and expanding this concept.
 
 - Fork the repository.
 - Create your feature branch (`git checkout -b feature/AmazingFeature`).
@@ -66,4 +68,4 @@ BeatLearner thrives on community contributions. We welcome all music enthusiasts
 
 ---
 
-**Empower your musical journey with the rhythm of AI! 🎼**
+**Embark on a musical journey with a touch of code! 🎼**

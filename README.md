@@ -66,18 +66,4 @@ BeatLearner thrives on community contributions. We welcome all music enthusiasts
 
 ---
 
-## License
-
-Distributed under the MIT License. See `LICENSE` for more information.
-
----
-
-## Contact
-
-For any queries or feedback, please drop us a message at:
-
-📧 Email: [beatlearner@support.com](mailto:beatlearner@support.com)
-
----
-
 **Empower your musical journey with the rhythm of AI! 🎼**

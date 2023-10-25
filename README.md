@@ -1,71 +1,71 @@
-Considering the basic prototype provided, here's an updated README:
+## BeatLearner: Real-time Music Improvisation AI
+
+### Overview
+
+BeatLearner is an AI-driven music generation tool that improvises and plays musical sequences in real-time. Inspired by different genres like Jazz and EDM, BeatLearner not only creates MIDI sequences but also plays them immediately, giving users an immersive music creation experience.
+
+### Prerequisites
+
+Ensure you have the following installed:
+
+- Python 3.x
+- `pygame` for real-time MIDI playback
+- `midiutil` for MIDI sequence generation
+
+### Installation
+
+1. Clone the repository:
+
+```bash
+git clone [URL_TO_YOUR_REPOSITORY]
+```
+
+2. Navigate to the project directory:
+
+```bash
+cd BeatLearner
+```
+
+3. Set up a Python virtual environment:
+
+```bash
+/usr/bin/python3 -m venv venv
+```
+
+4. Activate the virtual environment:
+
+```bash
+source venv/bin/activate
+```
+
+5. Install the required Python packages:
+
+```bash
+pip install pygame midiutil
+```
+
+### Usage
+
+To start the real-time music improvisation:
+
+```bash
+python BeatLearner.py
+```
+
+The program will continuously generate and play music based on the pre-defined genres. To stop the program, interrupt it manually, typically using `Ctrl + C`.
+
+### Customization
+
+Inside the `BeatLearner.py` script, you can:
+
+- Modify the available genres and associated notes.
+- Adjust the tempo for the sequences.
+- Randomize tempo and genre to introduce more variety in the generated sequences.
+
+### License
+
+[Your preferred license, e.g., MIT, GPL, etc.]
 
 ---
 
-# BeatLearner: Basic Machine Learning Music Improv AI 🎵
-
----
-
-## Introduction
-
-**BeatLearner** is a simple prototype designed to introduce the concept of generating music programmatically. It's not fully AI-driven yet, but serves as a starting point for those looking to blend technology with music.
-
----
-
-## Features
-
-1. **Genre Selection** - Currently supports Jazz and EDM genres with predefined scales.
-2. **Customizable Tempo** - Adjust the beats per minute to your liking.
-3. **MIDI Output** - Save your generated beats as MIDI files for external playback.
-
----
-
-## Quick Start
-
-1. **Installation**:
-
-   You need to install MIDIUtil for BeatLearner to work:
-
-   ```bash
-   pip install MIDIUtil
-   ```
-
-2. **Usage**:
-
-   ```python
-   from beatlearner import BeatMaker
-   
-   # Initialize BeatMaker
-   beat = BeatMaker()
-   
-   # Generate a beat based on default settings
-   beat.generate()
-   
-   # Save the beat as a MIDI file
-   beat.save("output.mid")
-   ```
-
----
-
-## Customization
-
-You can adjust several parameters:
-
-- **Genre**: Choose between Jazz and EDM.
-- **BPM (Beats Per Minute)**: Adjust your desired tempo using the `set_tempo` method.
-
----
-
-## Contribute
-
-Though BeatLearner is a basic prototype, we welcome all music enthusiasts, developers, and machine learning experts to join in refining and expanding this concept.
-
-- Fork the repository.
-- Create your feature branch (`git checkout -b feature/AmazingFeature`).
-- Commit your changes (`git commit -m 'Add some AmazingFeature'`).
-- Push to the branch (`git push origin feature/AmazingFeature`).
-- Open a Pull Request.
-
----
-
-**Embark on a musical journey with a touch of code! 🎼**
+With this updated README, users should have a clearer idea of the program's new features and how to set up and use the real-time playback feature. Adjust as needed based on your project's specifics or additional information you'd like to include.

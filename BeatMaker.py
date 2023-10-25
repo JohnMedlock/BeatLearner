@@ -6,7 +6,7 @@ import io
 class BeatMaker:
     def __init__(self):
         self.tempo = 120
-        self.duration = 4  # default duration of the beat in beats
+        self.duration = 48  # default duration of the beat in beats
         self.genres = {
             "Jazz": [60, 62, 64, 67, 69, 71],  # Example jazz notes (C Major Pentatonic)
             "EDM": [60, 64, 65, 67, 71, 72],  # Example EDM notes (C Major Scale)

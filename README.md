@@ -62,10 +62,3 @@ Inside the `BeatLearner.py` script, you can:
 - Adjust the tempo for the sequences.
 - Randomize tempo and genre to introduce more variety in the generated sequences.
 
-### License
-
-[Your preferred license, e.g., MIT, GPL, etc.]
-
----
-
-With this updated README, users should have a clearer idea of the program's new features and how to set up and use the real-time playback feature. Adjust as needed based on your project's specifics or additional information you'd like to include.

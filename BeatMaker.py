@@ -14,6 +14,8 @@ class BeatMaker:
         self.current_genre = "Jazz"
         self.midi = None
 
+        print(f"Initialized with the {self.current_genre} genre.")  # Print statement here
+
     def _initialize_midi(self):
         self.midi = MIDIFile(1, adjust_origin=True)
         self.midi.addTempo(0, 0, self.tempo)
